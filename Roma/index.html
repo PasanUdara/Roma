@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Roma</title>
+</head>
+<body>
+
+    <div class="body-wrapper">
+        <nav class="navbar">
+            <span class="heading"><i class="fa-regular fa-lightbulb"></i> Take Action</span>
+        </nav>
+        <div class="share">
+            <div class="share-container">
+                <div class="share-text"><span>Share</span></div>
+                <div onmouseenter="document.querySelector('.hidden-icons').style.transform = 'translateX(0)';" && onmouseleave="document.querySelector('.hidden-icons').style.transform = 'translateX(300px)';" class="share-icons">
+                    <div class="hidden-icons" style="display: flex; position: absolute; transform: translateX(300px); transition: 0.5s;">
+                        <div class="share-icon fac" onmouseenter="document.querySelector('.fb').style.color = '#181818';" && onmouseleave="document.querySelector('.fb').style.color = 'lightblue';">
+                            <i class="fb fa-brands fa-facebook-f fa-lg"></i>
+                        </div>
+                        <div class="share-icon twi" onmouseenter="document.querySelector('.tw').style.color = '#181818';" && onmouseleave="document.querySelector('.tw').style.color = 'lightskyblue';">
+                            <i class="tw  fa-brands fa-twitter fa-lg"></i>
+                        </div>
+                        <div class="share-icon mes" onmouseenter="document.querySelector('.ms').style.color = '#181818';" && onmouseleave="document.querySelector('.ms').style.color = 'lightcoral';">
+                            <i class="ms  fa-solid fa-envelope fa-lg"></i>
+                        </div>
+                    </div>
+                    <div  id="share" class="share-icon" style="position: absolute; right: 186px;">
+                        <i class='bx bx-share-alt bx-sm  bx-flashing-hover' style="color: #e7bc0e;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" >
+            <div class="content">
+                <div class="content-effect">
+                    <p class="content-p"><span class="letter">T</span>HERE ARE <br> <span class="letter">M</span>ILLIONS <br> <span class="letter">O</span>F CLEOS <br> <span class="letter">A</span>LL OVER <br> <span class="letter">T</span>HE WORLD</p>
+                <a href="#section1" class="scroll-down">scroll to learn more  </a> <a href="#section1" class="fa-solid fa-angle-down scroll-icon"></a>
+            </div>
+                </div>
+                <div class="netflix" >
+                    <div id="netflix" onmouseenter="document.getElementById('text').style.display = 'block';" || onmouseleave="document.getElementById('text').style.display = 'none';">
+                        <i class="fa-sharp fa-regular fa-circle-play fa-3x fa"></i>
+                    <span id="text" class="netflix-link" style="display: none;">Watch ROMA on Netflix</span>
+                    </div>
+                </div>
+        </div>
+        <div class="sections">
+            <section id="section1" class="section1">
+                <h1>
+                    <span class="first-text">AN INDIGENOUS DOMESTIC WORKER’S JOURNEY INSPIRES <br>
+                         THIS INTIMATE YET UNIVERSAL PORTRAIT OF FAMILY, <br>
+                          MEMORY AND LOVE. IN ROMA, OSCAR WINNER ALFONSO <br>
+                           CUARÓN DELIVERS A VIVID, EMOTIONAL PORTRAIT OF A <br>
+                            DOMESTIC WORKER, CLEO, WHICH ASKS US TO EXPLORE HOW <br>
+                             WE CAN MAKE A DIFFERENCE FOR</span>                       
+                    </span>
+                    <span class="second-text">THE WOMEN WHO CARE <br>
+                         FOR OUR FAMILIES AND OUR HOMES</span>
+                    <span class="third-text">: THE REAL-LIFE CLEOS <br>
+                         EVERYWHERE.</span>
+                </h1>
+            </section>
+        </div>
+        <div class="box-cover">
+            <div class="pop-up-box">
+                <i class="fa-sharp fa-solid fa-xmark close" ></i>
+                <div class="p">
+                    <span class="text"> DOMESTIC WORKERS DON'T GET <br> THE RESPECT, DIGNITY OR BASIC <br> LABOUR PROTECTIONS THEY <br> DESERVE YOU CAN HELP.</span>
+                    <div class="button-shadow">
+                    </div>
+                    <button class="p-button">JOIN US</button>  
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>

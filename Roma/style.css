@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.body-wrapper {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.box-cover {
+    position: absolute;
+    left: 360px;
+    top: 130px;
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.container {
+    background-image: url('https://roma.domesticworkers.org/wp-content/themes/purple/assets/build/img/cleo-topper.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 250vh;
+    filter: brightness(50%) blur(1px) contrast(50%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.pop-up-box {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.p {
+    width: 550px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.781);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    color: rgba(255, 255, 255, 0.795);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: white;
+}
+
+.text {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.p-button {
+    cursor: pointer;
+    width: 170px;
+    height: 40px;
+    position: absolute;
+    bottom: 47px;
+    background-color: rgb(26, 23, 23);
+    color: white;
+}
+
+.button-shadow {
+    margin-top: 40px;
+    background-color: rgb(192, 192, 19);
+    width: 170px;
+    height: 40px;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.fa-lightbulb {
+    cursor: pointer;
+    color: #e7bc0e;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+.heading {
+    margin-right: 40px;
+    padding: 10px 5px;
+    font-size: 20px;
+    color: white;
+    border-bottom: 1px  #e7bc0e solid;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    position: fixed;
+    z-index: 10000;
+}
+
+.content {
+    position: absolute;
+    padding-left: 100px;
+    left: 0;
+    top: 0;
+}
+
+.content-effect {
+    position: relative;
+    animation: effect ease-in 2s;
+}
+
+.content-p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+@keyframes effect {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.scroll-down {
+    font-family: 'Pacifico', cursive;
+    opacity: 1;
+    text-decoration: none;
+    color:  red;
+    font-size: 30px;
+    transition: opacity 0.5s;
+ 
+}
+
+.scroll-icon {
+    color: red;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.letter {
+    color: white;
+}
+
+.netflix {
+    position: absolute;
+    right: 10px;
+    top: 600px;
+}
+
+#netflix {
+    width: 65px;
+    height: 65px;
+    background-color: #181818;
+    display: flex;
+    opacity: 1;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 1s;
+    position: relative;
+}
+
+#netflix:hover {
+    width: 250px;
+    transition: 0.1s ease-in;
+}
+
+.netflix-link {
+    position: absolute;
+    padding: 5px 0 5px 5px;
+    color: white;
+    font-size: 15px;
+    border-bottom: 1px solid #e7bc0e;
+    top: 15px;
+    right: 20px;
+}
+
+
+
+.fa {
+    color:  #e7bc0e;
+    margin: 5px 10px 5px 5px;
+}
+
+.share {
+    position: absolute;
+    top: 300px;
+    right: 282px;
+}
+
+.share-container {
+    position: fixed;
+    transition: 1s;
+    z-index:10000;
+    opacity: 0;
+}
+
+.share-text {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.share-text > span {
+    color: whitesmoke;
+}
+
+.share-icons {
+    display: flex;
+    position: relative;
+    width: 450px;
+}
+
+
+.share-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: #181818;
+    margin-left: 1px;
+}
+
+.fb {
+    color: lightblue;
+}
+
+.tw {
+    color: lightskyblue;
+}
+
+.ms {
+    color: lightcoral;
+}
+
+.fac:hover {
+    background-color: lightblue;
+}
+
+.twi:hover {
+    background-color: lightskyblue;
+}
+
+.mes:hover {
+    background-color: lightcoral;
+}
+
+.share-container {
+    position: fixed;
+}
+
+/** sections **/
+
+.sections {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: fixed;
+    position: relative;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 100px;
+    line-height: 250%;
+    height: inherit;
+    width: inherit;
+}
+
+.first-text {
+    color: #6bc1a3;
+}
+
+.second-text {
+    background-color: grey;
+    color: white;
+}
+
+.third-text {
+    color: #6bc1a3;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section3 {
+    position: relative;
+}
+
+.section3-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 500px;
+    z-index: 100000;
+    left: 0;
+    margin-bottom: 20px;
+}
+
+.section3-wrapper h1 {
+    position: absolute;
+    color: #e7bc0e;
+    font-size: 100px;
+    margin-top: 100px;
+}
+
+.us {
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    position: absolute;
+    bottom: 180px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.us-text1 {
+    font-size: 30px;
+    color: #e7bc0e;
+}
+
+.us-text2 {
+    font-size: 30px;
+    margin-left: 5px;
+    background-color: rgb(46, 42, 42);
+    color: white;
+}
